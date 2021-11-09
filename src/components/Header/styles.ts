@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   box-shadow: 0px 10px 30px #0000001a;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const Logo = styled.div`
@@ -44,6 +45,7 @@ export const LocationInput = styled.input`
   outline: none;
   border: none;
   color: #656469;
+  margin-left: 0.5vw;
 `;
 
 export const DateInput = styled(LocationInput)`
@@ -67,4 +69,9 @@ export const SearchIcon = styled(Search)`
   border-radius: 50%;
   margin-left: 3vw;
   margin-right: 6px;
+  cursor: pointer;
+`;
+
+export const ButtonsDiv = styled.div`
+margin-right: 5vw;
 `;

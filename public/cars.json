@@ -1,0 +1,169 @@
+{
+  "cars": [
+    {
+      "model": "California",
+      "brand": "Ferrari",
+      "logo": "https://upload.wikimedia.org/wikipedia/pt/thumb/f/fb/Logotipo_da_Scuderia_Ferrari.svg/1200px-Logotipo_da_Scuderia_Ferrari.svg.png",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=ef75889c-beb7-4c66-9b0a-4830aa0c6396&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 725,
+      "detailPictures": [
+        {
+          "color": "red",
+          "pic": "https://purepng.com/public/uploads/large/purepng.com-ferrari-california-red-carcarferrarivehicletransport-96152465228982kdz.png"
+        },
+        {
+          "color": "white",
+          "pic": "https://purepng.com/public/uploads/large/purepng.com-ferrari-california-t-carcarferrarivehicletransport-961524664769hdr83.png"
+        }
+      ]
+    },
+    {
+      "model": "911 TURBO S",
+      "brand": "Porsche",
+      "logo": "https://w7.pngwing.com/pngs/749/282/png-transparent-porsche-cayman-logo-car-porsche-logo-emblem-text-signage.png",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=65a7edfb-57df-4d4a-aa4e-b344f7a4ecab&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 725,
+      "detailPictures": [
+        {
+          "color": "white",
+          "pic": "https://cloudflarestockimages.dealereprocess.com/resrc/images/stockphoto_asset-c_limit,f_auto,fl_lossy,w_1100/v1/svp/Pix_PNG1280/2021/21porsche/21porsche911carreras2wdcp8a/porsche_21911carreras2wdcp8a_angularfront"
+        },
+        {
+          "color": "black",
+          "pic": "https://di-uploads-pod15.dealerinspire.com/rusnakwestlakeporsche/uploads/2019/01/Porsche-911-Turbo.png"
+        },
+        {
+          "color": "silver",
+          "pic": "https://smartcdn.prod.postmedia.digital/driving/wp-content/uploads/2020/04/chrome-image-411481.png"
+        }
+      ]
+    },
+    {
+      "model": "Wraith",
+      "brand": "Rolls Royce",
+      "logo": "https://marcas-logos.net/wp-content/uploads/2020/03/Rolls-Royce-Logo-1998.png",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=0ca32b8d-3324-49c9-8406-871c561069c0&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 725,
+      "detailPictures": [
+        {
+          "color": "red",
+          "pic": "https://snipstock.com/assets/cdn/png/bac35b17a2d7c6043fc25f1c00c7d69c.png"
+        }
+      ]
+    },
+    {
+      "model": "911 GT3 RS",
+      "brand": "Porsche",
+      "logo": "https://w7.pngwing.com/pngs/749/282/png-transparent-porsche-cayman-logo-car-porsche-logo-emblem-text-signage.png",
+      "catalogPicture": "https://www.stuttgartporsche.com.br/images/db/modelo/911-GT3-RS.png",
+      "price": 825,
+      "detailPictures": [
+        {
+          "color": "red",
+          "pic": "https://purepng.com/public/uploads/large/purepng.com-red-porsche-911-gt3-rs-4-carcarvehicletransportporsche-961524661235vbivb.png"
+        },
+        {
+          "color": "white",
+          "pic": "https://di-uploads-pod15.dealerinspire.com/rusnakpasadenaporsche/uploads/2018/12/iris.png"
+        },
+        {
+          "color": "silver",
+          "pic": "https://www.pngkit.com/png/full/766-7667487_2019-porsche-911-gt3-porsche-gt3-rs-png.png"
+        }
+      ]
+    },
+    {
+      "model": "Continental GT",
+      "brand": "Bentley",
+      "logo": "https://brandslogos.com/wp-content/uploads/images/large/bentley-motors-logo.png",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=52ac8664-ef69-4279-a4f0-e31ed8a28c71&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 825,
+      "detailPictures": [
+        {
+          "color": "blue",
+          "pic": "http://pngimg.com/uploads/bentley/bentley_PNG30.png"
+        },
+        {
+          "color": "red",
+          "pic": "https://images.dealer.com/ddc/vehicles/2021/Bentley/Continental%20GT/Coupe/perspective/front-left/2021_24.png"
+        },
+        {
+          "color": "silver",
+          "pic": "https://www.pngkey.com/png/full/836-8366297_bentley-bentley-continental-gt-preo.png"
+        }
+      ]
+    },
+    {
+      "model": "4C Spider",
+      "brand": "Alfa Romeo",
+      "logo": "https://lezebre.lu/images/detailed/17/30527-Alfa-Romeo.png",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=645abd6d-97f6-4795-a465-d09e4650b698&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 825,
+      "detailPictures": [
+        {
+          "color": "yellow",
+          "pic": "http://assets-clean.local-car-finder.com/images/12778/12778_cc2400_032_PYF.png"
+        },
+        {
+          "color": "white",
+          "pic": "https://www.pikpng.com/pngl/b/302-3029829_alfa-romeo-2019-alfa-romeo-4c-spider-clipart.png"
+        },
+        {
+          "color": "red",
+          "pic": "https://images.dealer.com/ddc/vehicles/2020/Alfa%20Romeo/4C%20Spider/Convertible/perspective/front-left/2020_24.png"
+        }
+      ]
+    },
+    {
+      "model": "Aventador",
+      "brand": "Lamborghini",
+      "logo": "https://marcas-logos.net/wp-content/uploads/2020/01/Lamborghini-logo.png",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=559ba591-4bb3-4e94-acbe-c2dd0cd6f565&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 925,
+      "detailPictures": [
+        {
+          "color": "orange",
+          "pic": "https://www.nicepng.com/png/full/354-3542947_undefined-lamborghini-aventador-s-png.png"
+        },
+        {
+          "color": "yellow",
+          "pic": "https://officialpsds.com/imageview/rx/36/rx36mk_large.png?1529371597"
+        },
+        {
+          "color": "white",
+          "pic": "https://www.seekpng.com/png/full/12-126496_lamborghini-aventador-png-lamborghini-aventador-s-azzurro-thetys.png"
+        }
+      ]
+    },
+    {
+      "model": "Veyron Spyder",
+      "brand": "Bugatti",
+      "logo": "https://http2.mlstatic.com/D_NQ_NP_756586-MLB28974058762_122018-O.jpg",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=8ae7b079-7479-4195-be46-5d2de1bafa5a&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 925,
+      "detailPictures": [
+        {
+          "color": "blue",
+          "pic": "https://i.pinimg.com/originals/e9/34/ac/e934ac022c9ecf2dadf6954610176627.png"
+        }
+      ]
+    },
+    {
+      "model": "Corvette",
+      "brand": "Chevrolet",
+      "logo": "https://cdn.freelogovectors.net/svg05/corvette-logo.svg",
+      "catalogPicture": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:699a6983-35c7-4662-bc81-5c626742102d;revision=0?component_id=6b25c431-6076-487c-bcf3-a20a7c38742f&api_key=CometServer1&access_token=1636503313_urn%3Aaaid%3Asc%3AUS%3A699a6983-35c7-4662-bc81-5c626742102d%3Bpublic_98c940c89ff814e59be6726a607784ffbf08e3df",
+      "price": 925,
+      "detailPictures": [
+        {
+          "color": "white",
+          "pic": "https://purepng.com/public/uploads/large/purepng.com-chevrolet-corvettechevychevroletamerican-automobilechevrolet-corvette-1701527424851u5gyc.png"
+        },
+        {
+          "color": "red",
+          "pic": "https://www.pngkit.com/png/full/194-1945842_new-chevy-corvette-red-2018-chevrolet-corvette.png"
+        }
+      ]
+    }
+  ]
+}
