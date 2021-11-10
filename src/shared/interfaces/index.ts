@@ -3,6 +3,7 @@ export interface iCarCard {
     model: string;
     picture: string;
     price: number;
+    carClickHandler: (carModel: string) => void
 }
 
 export interface iDetailPictures {
@@ -21,4 +22,10 @@ export interface iCarData {
 
 export interface iCarsState {
     cars: iCarData[];
+}
+
+export interface iChosedPictureInfo {
+    color: string;
+    picNumber: string;
+    picture: string
 }

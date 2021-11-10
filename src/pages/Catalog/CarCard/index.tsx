@@ -4,7 +4,7 @@ import { iCarCard } from "../../../shared/interfaces";
 
 const CarCard: React.FC<iCarCard> = (props) => {
     return (
-        <CardContainer>
+        <CardContainer onClick={() => props.carClickHandler(props.model)}>
             <TopCard>
                 <CarBrand>{props.brand}</CarBrand>
                 <Dots>
