@@ -8,8 +8,15 @@ export const CardContainer = styled.div`
   border-radius: 20px;
   height: 210px;
   width: 270px;
-  padding: 15px;
-  margin: 2vh 2.5vw;
+  padding: 20px;
+  margin: 1vh 2.5vw;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 export const TopCard = styled.div`
@@ -47,7 +54,7 @@ export const CarModel = styled.p`
 
 export const CarImg = styled.img`
   width: 230px;
-  margin-top: 25px;
+  margin-top: 20px;
   filter: drop-shadow(0 5px 2px #343635);
 `;
 
@@ -59,6 +66,7 @@ export const CarPrice = styled.div`
 
 
 export const PriceText = styled.p`
+margin-top: 5px;
   font: normal normal bold 24px/32px Segoe UI;
   position: relative;
   color: #313136;
