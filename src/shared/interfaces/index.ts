@@ -29,3 +29,14 @@ export interface iChosedPictureInfo {
     picNumber: string;
     picture: string
 }
+
+export interface iArrowButtonProps {
+    backgroundColor: string;
+    textColor: string;
+    direction: string;
+    btClickHandler: () => void
+}
+
+export interface iPicturePreviewProps {
+    src: string
+}

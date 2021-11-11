@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
 import { useParams } from "react-router";
@@ -15,11 +16,17 @@ import {
   PictureInfo,
   CarColor,
   CatalogButtonWrapper,
-  BookButtonWrapper
+  BookButtonWrapper,
+  PageBottomContent,
+  LeftButton,
+  RightButton,
+  PicturesWrapper,
 } from "./styles";
 import { iChosedPictureInfo } from "../../shared/interfaces";
+import PicturePreview from "./PicturePreview";
 
 const Details: React.FC = () => {
+  const navigate = useNavigate();
   const params = useParams();
   const carsData = useSelector((state: RootState) => state.cars.cars);
   const chosedCar = carsData.filter((car) => car.model === params.carModel);
@@ -30,6 +37,10 @@ const Details: React.FC = () => {
     color: chosedCar[0].detailPictures[0].color,
     picNumber: `01`,
   };
+
+  const arrowButtonHandler = () => {
+    navigate('/');
+  }
 
   return (
     <React.Fragment>
@@ -48,6 +59,7 @@ const Details: React.FC = () => {
               backgroundColor="transparent"
               textColor="#313136"
               direction="left"
+              btClickHandler={arrowButtonHandler}
             >
               Back to Catalog
             </ArrowButton>
@@ -63,10 +75,18 @@ const Details: React.FC = () => {
             backgroundColor="#313136"
             textColor="#FFFFFF"
             direction="right"
+            btClickHandler={() => console.log('Booked')}
           >
             Book now
           </ArrowButton>
         </BookButtonWrapper>
+        <PageBottomContent>
+          {chosedCar[0].detailPictures.length > 1 && <LeftButton size={25} />}
+          <PicturesWrapper>
+            {chosedCar[0].detailPictures.map(picture => <PicturePreview  src={picture.pic}/>)}
+          </PicturesWrapper>
+          {chosedCar[0].detailPictures.length > 1 && <RightButton size={25} />}
+        </PageBottomContent>
       </ContentContainer>
     </React.Fragment>
   );

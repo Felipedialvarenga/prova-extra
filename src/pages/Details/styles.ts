@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ArrowRight, ArrowLeft } from "@styled-icons/bootstrap";
 
 export const ContentContainer = styled.div`
   margin: 1vh 5vw;
@@ -54,3 +55,33 @@ export const BookButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+export const PageBottomContent = styled.div`
+margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const PicturesWrapper = styled.div`
+display: flex;
+justify-content: space-around;
+`;
+
+export const LeftButton = styled(ArrowLeft)`
+ color: #FFFFFF;
+ border-radius: 50%;
+ background-color: #313136;
+ padding: 15px;
+ margin-right: 25px;
+ cursor: pointer;
+`;
+
+export const RightButton = styled(ArrowRight)`
+ color: #FFFFFF;
+ border-radius: 50%;
+ background-color: #313136;
+ padding: 15px;
+ cursor: pointer;
+`;
+
