@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ArrowRight, ArrowLeft } from "@styled-icons/bootstrap";
 
 export const ContentContainer = styled.div`
   margin: 1vh 5vw;
@@ -7,7 +6,6 @@ export const ContentContainer = styled.div`
 
 export const PageTopContent = styled.div`
   display: flex;
-  margin-top: 4vh;
 `;
 
 export const BrandLogo = styled.img`
@@ -68,20 +66,12 @@ display: flex;
 justify-content: space-around;
 `;
 
-export const LeftButton = styled(ArrowLeft)`
+export const CarouselButton = styled.button`
  color: #FFFFFF;
  border-radius: 50%;
  background-color: #313136;
  padding: 15px;
  margin-right: 25px;
+ border: none;
  cursor: pointer;
 `;
-
-export const RightButton = styled(ArrowRight)`
- color: #FFFFFF;
- border-radius: 50%;
- background-color: #313136;
- padding: 15px;
- cursor: pointer;
-`;
-

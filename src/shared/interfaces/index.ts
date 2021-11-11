@@ -26,7 +26,7 @@ export interface iCarsState {
 
 export interface iChosedPictureInfo {
     color: string;
-    picNumber: string;
+    picNumber: number;
     picture: string
 }
 
@@ -38,5 +38,8 @@ export interface iArrowButtonProps {
 }
 
 export interface iPicturePreviewProps {
-    src: string
+    src: string;
+    picNumber: number;
+    pictureClickHandler: (picIdx: number) => void;
+    isChosen: (idx: number) => boolean;
 }

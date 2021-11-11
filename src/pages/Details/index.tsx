@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
@@ -18,29 +18,51 @@ import {
   CatalogButtonWrapper,
   BookButtonWrapper,
   PageBottomContent,
-  LeftButton,
-  RightButton,
+  CarouselButton,
   PicturesWrapper,
 } from "./styles";
 import { iChosedPictureInfo } from "../../shared/interfaces";
 import PicturePreview from "./PicturePreview";
+import { ArrowRight, ArrowLeft } from "@styled-icons/bootstrap";
 
 const Details: React.FC = () => {
+  const [chosedPictureIdx, setChosedPictureIdx] = useState(0);
   const navigate = useNavigate();
   const params = useParams();
   const carsData = useSelector((state: RootState) => state.cars.cars);
   const chosedCar = carsData.filter((car) => car.model === params.carModel);
-  console.log(chosedCar);
 
   const chosedPicture: iChosedPictureInfo = {
-    picture: chosedCar[0].detailPictures[0].pic,
-    color: chosedCar[0].detailPictures[0].color,
-    picNumber: `01`,
+    picture: chosedCar[0].detailPictures[chosedPictureIdx].pic,
+    color: chosedCar[0].detailPictures[chosedPictureIdx].color,
+    picNumber: chosedPictureIdx,
   };
 
+  const pictureClickHandler = (picIdx: number) => {
+    setChosedPictureIdx(picIdx);
+  };
+
+  const leftButtonHandler = () => {
+    if (chosedPictureIdx === 0) {
+      setChosedPictureIdx(chosedCar[0].detailPictures.length - 1);
+    } else {
+      setChosedPictureIdx((prevIdx) => prevIdx - 1);
+    }
+  };
+
+  const rightButtonHandler = () => {
+    if (chosedPictureIdx === chosedCar[0].detailPictures.length - 1) {
+      setChosedPictureIdx(0);
+    } else {
+      setChosedPictureIdx((prevIdx) => prevIdx + 1);
+    }
+  };
+
+  const isChosen = (idx: number) => chosedPictureIdx === idx;
+
   const arrowButtonHandler = () => {
-    navigate('/');
-  }
+    navigate("/");
+  };
 
   return (
     <React.Fragment>
@@ -66,7 +88,7 @@ const Details: React.FC = () => {
           </CatalogButtonWrapper>
           <CarPicture src={chosedPicture.picture} />
           <PictureInfo>
-            <BoldText>{chosedPicture.picNumber}</BoldText>
+            <BoldText>{`0${chosedPicture.picNumber + 1}`}</BoldText>
             <CarColor>{chosedPicture.color}</CarColor>
           </PictureInfo>
         </PageMiddleContent>
@@ -75,17 +97,32 @@ const Details: React.FC = () => {
             backgroundColor="#313136"
             textColor="#FFFFFF"
             direction="right"
-            btClickHandler={() => console.log('Booked')}
+            btClickHandler={() => console.log("Booked")}
           >
             Book now
           </ArrowButton>
         </BookButtonWrapper>
         <PageBottomContent>
-          {chosedCar[0].detailPictures.length > 1 && <LeftButton size={25} />}
+          {chosedCar[0].detailPictures.length > 1 && (
+            <CarouselButton onClick={leftButtonHandler}>
+              <ArrowLeft size={25} />
+            </CarouselButton>
+          )}
           <PicturesWrapper>
-            {chosedCar[0].detailPictures.map(picture => <PicturePreview  src={picture.pic}/>)}
+            {chosedCar[0].detailPictures.map((picture, idx) => (
+              <PicturePreview
+                src={picture.pic}
+                picNumber={idx}
+                pictureClickHandler={pictureClickHandler}
+                isChosen={isChosen}
+              />
+            ))}
           </PicturesWrapper>
-          {chosedCar[0].detailPictures.length > 1 && <RightButton size={25} />}
+          {chosedCar[0].detailPictures.length > 1 && (
+            <CarouselButton onClick={rightButtonHandler}>
+              <ArrowRight size={25} />
+            </CarouselButton>
+          )}
         </PageBottomContent>
       </ContentContainer>
     </React.Fragment>
