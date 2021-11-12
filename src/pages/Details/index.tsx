@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
-import { RootState } from "../../store";
 import { useParams } from "react-router";
-import { ArrowButton, Header } from "../../components";
+
+import { RootState } from "@store/index";
+import { ArrowButton, Header } from "@components/index";
+import { iChosedPictureInfo } from "@shared/interfaces";
+
 import {
   BrandLogo,
   PageTopContent,
@@ -21,7 +24,6 @@ import {
   CarouselButton,
   PicturesWrapper,
 } from "./styles";
-import { iChosedPictureInfo } from "../../shared/interfaces";
 import PicturePreview from "./PicturePreview";
 import { ArrowRight, ArrowLeft } from "@styled-icons/bootstrap";
 

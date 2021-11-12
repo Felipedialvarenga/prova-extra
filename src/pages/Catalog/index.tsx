@@ -1,8 +1,10 @@
 import React, { useEffect} from "react";
 import { useNavigate } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState, saveCarsData } from "../../store";
-import { Header } from "../../components";
+
+import { RootState, saveCarsData } from "@store/index"
+import { Header } from "@components/index";
+
 import CarCard from "./CarCard";
 import { ContentWrapper} from "./styles";
 

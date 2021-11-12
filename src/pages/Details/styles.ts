@@ -45,6 +45,7 @@ export const BoldText = styled.h2`
 
   @media(max-width: 400px){
     font-size: 30px;
+    padding: 0;
   }
 `;
 
@@ -111,6 +112,7 @@ export const PageBottomContent = styled.div`
   @media(max-width: 750px){
     margin-top: 5vh;
   }
+
 `;
 
 export const PicturesWrapper = styled.div`
