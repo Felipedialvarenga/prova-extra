@@ -97,7 +97,7 @@ const Details: React.FC = () => {
             backgroundColor="#313136"
             textColor="#FFFFFF"
             direction="right"
-            btClickHandler={() => console.log("Booked")}
+            btClickHandler={() => alert("Booked !")}
           >
             Book now
           </ArrowButton>
@@ -105,12 +105,13 @@ const Details: React.FC = () => {
         <PageBottomContent>
           {chosedCar[0].detailPictures.length > 1 && (
             <CarouselButton onClick={leftButtonHandler}>
-              <ArrowLeft size={25} />
+              <ArrowLeft size={15} />
             </CarouselButton>
           )}
           <PicturesWrapper>
             {chosedCar[0].detailPictures.map((picture, idx) => (
               <PicturePreview
+              key={picture.color+idx}
                 src={picture.pic}
                 picNumber={idx}
                 pictureClickHandler={pictureClickHandler}
@@ -120,7 +121,7 @@ const Details: React.FC = () => {
           </PicturesWrapper>
           {chosedCar[0].detailPictures.length > 1 && (
             <CarouselButton onClick={rightButtonHandler}>
-              <ArrowRight size={25} />
+              <ArrowRight size={15} />
             </CarouselButton>
           )}
         </PageBottomContent>

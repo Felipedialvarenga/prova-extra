@@ -17,6 +17,18 @@ export const CardContainer = styled.div`
     transform: translate(-5px, -5px);
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.2);
   }
+
+  @media(max-width: 1670px){
+    margin-left: 5vw
+  }
+
+  @media(max-width: 1380px){
+    margin-left: 10vw
+  }
+
+  @media(max-width: 900px){
+    margin-left: 5vw
+  }
 `;
 
 export const TopCard = styled.div`

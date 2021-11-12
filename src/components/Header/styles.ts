@@ -9,6 +9,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 950px) {
+    margin-bottom: 45px;
+  }
 `;
 
 export const Logo = styled.div`
@@ -38,6 +43,59 @@ export const InputsDiv = styled.div`
   height: 40%;
   padding-left: 5px;
   font-size: 14px;
+
+  @media (max-width: 950px) {
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -40px;
+    left: 5%;
+
+    &::before {
+      content: "";
+      height: 15px;
+      width: 10px;
+      background-color: #ffffff;
+      top: -12px;
+      left: 20px;
+      position: absolute;
+      border-radius: 40px;
+    }
+
+    &::after {
+      content: "";
+      height: 15px;
+      width: 10px;
+      background-color: #ffffff;
+      top: -12px;
+      right: 20px;
+      position: absolute;
+      border-radius: 40px;
+    }
+  }
+
+  @media (max-width: 530px) {
+    top: 90px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 140px;
+    padding-left: 15px;
+    padding-top: 10px;
+
+    &::before {
+      height: 25px;
+      top: -22px;
+    }
+
+    &::after {
+      height: 25px;
+      top: -22px;
+    }
+  }
+`;
+
+export const LocationWrapper = styled.div`
+  display: flex;
 `;
 
 export const LocationInput = styled.input`
@@ -58,13 +116,17 @@ export const DateInput = styled(LocationInput)`
     left: -25px;
     position: absolute;
     font-size: 14px;
-    opacity: 0.6
+    opacity: 0.6;
+  }
+
+  @media (max-width: 530px) {
+    margin: 0;
   }
 `;
 
 export const SearchIcon = styled(Search)`
   color: #7b89f4;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 3px;
   border-radius: 50%;
   margin-left: 3vw;
@@ -73,5 +135,9 @@ export const SearchIcon = styled(Search)`
 `;
 
 export const ButtonsDiv = styled.div`
-margin-right: 5vw;
+  margin-right: 5vw;
+
+  @media(max-width: 360px){
+    margin-left: 20px;
+  }
 `;

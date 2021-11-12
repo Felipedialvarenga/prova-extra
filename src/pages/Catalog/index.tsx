@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState, saveCarsData } from "../../store";
 import { Header } from "../../components";
 import CarCard from "./CarCard";
-import { ContentWrapper } from "./styles";
+import { ContentWrapper} from "./styles";
 
 const Catalog: React.FC = () => {
   const dispatch = useDispatch();
