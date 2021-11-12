@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div<{chosed: boolean, onClick: (picNumber:number) => void}>`
 width: max(12vw,120px);
-background-color: #C4C4C4;
+background-color: ${props => props.chosed ? '#c9b9c3' : '#C4C4C4'};
 border-radius: 8px;
 margin-right: 100px;
 cursor: pointer;
@@ -22,6 +22,6 @@ export const CarPicture = styled.img`
   width: max(15vw,150px);
 
   @media(max-width: 550px){
-    width: 100px;
+    width: 90px;
   }
 `;

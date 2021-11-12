@@ -6,6 +6,10 @@ export const ContentContainer = styled.div`
   @media(max-width: 850px){
     margin: 1vh 1vw;
   }
+
+  @media(max-width: 400px){
+    padding: 0 10px;
+  }
 `;
 
 export const PageTopContent = styled.div`
@@ -22,7 +26,7 @@ export const BrandLogo = styled.img`
   @media(max-width: 530px){
     max-width: 150px;
     margin-left: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -37,6 +41,10 @@ export const BoldText = styled.h2`
 
   @media(max-width: 1250px){
     font-size: 35px;
+  }
+
+  @media(max-width: 400px){
+    font-size: 30px;
   }
 `;
 
@@ -108,6 +116,10 @@ export const PageBottomContent = styled.div`
 export const PicturesWrapper = styled.div`
 display: flex;
 justify-content: space-around;
+
+@media(max-width: 400px){
+    margin-left: 18px;
+  }
 `;
 
 export const CarouselButton = styled.button`

@@ -14,7 +14,7 @@ export const ContentWrapper = styled.div`
   }
 
   @media(max-width:530px){
-    margin-top: 17vh;
+    margin-top: 20vh;
   }
 `;
 

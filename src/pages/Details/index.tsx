@@ -60,6 +60,28 @@ const Details: React.FC = () => {
 
   const isChosen = (idx: number) => chosedPictureIdx === idx;
 
+  const carouselOrder = () => {
+    const carouselArray = [];
+
+    if(chosedPictureIdx === 0){
+      carouselArray.push(2);
+    } else {
+      carouselArray.push(chosedPictureIdx-1);
+    }
+
+    carouselArray.push(chosedPictureIdx);
+
+    if(chosedPictureIdx === 2){
+      carouselArray.push(0);
+    } else {
+      carouselArray.push(chosedPictureIdx+1);
+    }
+
+    return carouselArray;
+  }
+
+  const carouselIdx = carouselOrder();
+
   const arrowButtonHandler = () => {
     navigate("/");
   };
@@ -110,6 +132,13 @@ const Details: React.FC = () => {
           )}
           <PicturesWrapper>
             {chosedCar[0].detailPictures.map((picture, idx) => (
+              chosedCar[0].detailPictures.length === 3 ? <PicturePreview
+              key={picture.color+idx}
+                src={chosedCar[0].detailPictures[carouselIdx[idx]].pic}
+                picNumber={carouselIdx[idx]}
+                pictureClickHandler={pictureClickHandler}
+                isChosen={isChosen}
+              /> :
               <PicturePreview
               key={picture.color+idx}
                 src={picture.pic}
